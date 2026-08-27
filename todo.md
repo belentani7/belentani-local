@@ -26,7 +26,7 @@
 - [x] Corregir errores reproducibles y cubrirlos mediante pruebas de regresión.
 - [x] Ejecutar pruebas, tipos, build, análisis estático y comprobación visual final.
 - [x] Actualizar el informe de auditoría y guardar un checkpoint solo tras pasar las verificaciones.
-- [ ] Revisar que el repositorio no contenga secretos, builds ni registros locales antes de publicar.
-- [ ] Crear el repositorio privado `belentani` y publicar el commit inicial.
-- [ ] Crear el repositorio privado `belentani-local` sin modificar `Belentani`, que permanece público.
-- [ ] Verificar la rama remota, visibilidad privada y URL de la publicación.
+- [x] Revisar que el repositorio no contenga secretos, builds ni registros locales antes de publicar.
+- [x] Crear el repositorio privado `belentani-local` sin modificar `Belentani`, que permanece público.
+- [x] Verificar la rama remota, visibilidad privada y URL de la publicación.
+- [x] Registrar que `Belentani` no se publicó: ya existía como repositorio público y fue preservado sin cambios.
