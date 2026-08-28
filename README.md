@@ -42,7 +42,7 @@ La política bloquea comandos destructivos, privilegios elevados, URLs y utilida
 
 ## Verificación
 
-Ejecuta `pnpm test` para las pruebas del core y `pnpm test:ui` para la política usada por la interfaz. `pnpm check` valida TypeScript y `pnpm build` genera el frontend de producción. El documento [AUDIT.md](./AUDIT.md) conserva las pruebas y los límites revisados.
+Ejecuta `pnpm test` para las 9 pruebas del core y `pnpm test:ui` para las 4 pruebas de la política usada por la interfaz. `pnpm check` valida TypeScript y `pnpm build` genera el frontend de producción. El documento [AUDIT.md](./AUDIT.md) conserva las pruebas y los límites revisados.
 
 ## Límite intencional
 
