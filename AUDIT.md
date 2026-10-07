@@ -1,5 +1,7 @@
 # Auditoría máxima de Belentani v0.3
 
+> Nota del auditor externo (2026-08-27): resultados locales verificados — core 9/9, UI 4/4, `pnpm check` y `pnpm build` pasan, `pnpm audit --prod` sin vulnerabilidades conocidas.
+
 ## Resultado ejecutivo
 
 Belentani ya no es una interfaz con datos fijos de proyecto. El repositorio contiene un núcleo local de Node.js que inspecciona directorios reales, lee, escribe y busca archivos dentro de un workspace acotado, ejecuta comandos sin `shell`, exige aprobación cuando corresponde, bloquea patrones destructivos o de red y conserva evidencia JSONL dentro del propio proyecto. La interfaz web solicita el permiso del navegador para abrir una carpeta en modo de solo lectura y distingue con claridad `VERIFIED`, `PARTIAL`, `FAILED` y `NOT_IMPLEMENTED`.
@@ -14,7 +16,7 @@ Belentani ya no es una interfaz con datos fijos de proyecto. El repositorio cont
 | Terminal controlada | **VERIFIED** | `spawn(..., { shell: false })`, timeout, salida limitada y log JSONL |
 | Comandos destructivos o red implícita | **BLOCKED** | Reglas y pruebas para `rm`, URLs, `curl`, metacaracteres y flags de redirección |
 | Aprobación humana | **VERIFIED** | Escritura y órdenes `CAUTION` fallan sin `--approve` |
-| Pruebas core | **8/8 PASAN** | `pnpm test` |
+| Pruebas core | **9/9 PASAN** | `pnpm test` |
 | Pruebas de política UI | **4/4 PASAN** | `pnpm test:ui` |
 | TypeScript y bundle de producción | **PASAN** | `pnpm check` y `pnpm build` |
 | UI escritorio y móvil | **VERIFICADA** | Capturas de la vista sin workspace y responsive corregido |
